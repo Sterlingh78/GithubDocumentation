@@ -21,4 +21,58 @@ Advantages: 1. Maintains linear history of the project. 2. Removes unnecessary m
 If there are shared branches it is a big risk and usually creates conflicts. It is better to merge in this scenerio
 
 ## Rebase Screenshots:
+# Rebase Merge:
 ![rebase image](/rebasemerge.png)
+
+# Interactive Rebase:
+![interactive](/interactive.png)
+
+# When you shouldn't rebase with a remote repo
+When other developers are currently working on the remote branch. Can cause major conflict issues 
+
+## Git reset, checkout, and revert
+
+# What is Git reset?
+Allows you to move the branch to a different commit basically "resetting" the commit
+
+# What is the difference between hard, mixed and soft?
+Hard: completely removes changes in the staging area and working directory.
+Mixed: Discards staging area changes but keeps working directory changes.
+Soft: Removes nothing, just moves to a different commit and leaves all changes unstaged
+
+# What is Git checkout?
+Allows you to switch between branches on a repository
+
+# What is Git revert?
+Lets you create a new commit that undoes changes in a previous commit
+
+# In what ways are these commands the same and what ways are they different?
+They are the same becasue they switch commits or branches, but each do it in much different ways. Reset is a branch move, Revert undoes changes, and checkout lets you switch working branches
+
+# When would you use reset, checkout, or revert? Why?
+I would use reset to go back to a commit without erasing anything, a revert to go back and erase a commit, and a checkout to work on a different branch in the repository
+
+## Screenshots:
+
+# Reset:
+![git reset](/reset.png)
+
+# Checkout:
+![git checkout](/feature.png)
+
+# Commit:
+![git commit](/commit.png)
+
+# Revert:
+![git revert](/revert.png)
+
+## Git submodules
+
+# What are Git submodules?
+Submodules allow you to have a git repository within another git repository.
+
+# When would you use a submodule?
+So you can track dependencies between repositories and manage them as a single project.
+
+# What are the advantages and disadvantages of Git submodules?
+Advantages: You can track multiple relates repositories together as a single project. Disadvantages: can be very tricky to work with and add complexity to the repository
