@@ -21,4 +21,4 @@ Advantages: 1. Maintains linear history of the project. 2. Removes unnecessary m
 If there are shared branches it is a big risk and usually creates conflicts. It is better to merge in this scenerio
 
 ## Rebase Screenshots:
-![rebase image](/rebase merge.png)
+![rebase image](/rebasemerge.png)
